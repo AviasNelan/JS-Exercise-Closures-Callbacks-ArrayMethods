@@ -44,6 +44,9 @@ Find the file `index.js` and complete the tasks until your tests are passing.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+
+Closure is reaching outside of a function to access data not within the functions scope.
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -65,8 +68,17 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+The generic return function is reaching outside itself to grab the name parameter of personalDice.
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
+The name dan stays the same because dansroll() is always passing the value "dan" into the name parameter.
+The roll can change based off of the random numbers between 1 and 6.
+
 c. What is the lexical scope of `newRoll`? 
+
+newRoll only exists within the scope of the return function. The const variable cannot be used outside of the return function. The results of that roll are logged when executing dan or zoes roll.
 
 ### Task 3 - Stretch Goals
 
