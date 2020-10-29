@@ -28,10 +28,16 @@ function processFirstItem(stringList, callback) {
  * 
  * 1. What is the difference between counter1 and counter2?
  * 
+ * counter1 uses a secondary return function to increment the count as defined in the primary fuction 
+ * 
  * 2. Which of the two uses a closure? How can you tell?
  * 
+ * counter1 uses closure, because the variable count is declared outside the function scope
+ * 
  * 3. In what scenario would the counter1 code be preferable? In what scenario would counter2 be better? 
- *
+ *  
+ * Counter1 would be better if you did not want any other function to augment the count. In counter2, any other function or let re-assignment can change its value. So if you wanted a
+ * variable to be able to be manipulated by multiple functions, you could declare in global scope.
 */
 
 // counter1 code
